@@ -1,0 +1,272 @@
+@import "libs.scss";
+*{
+  margin: 0;
+  padding: 0;
+
+}
+h1 {
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: 600;
+  padding-top: 23px;
+}
+
+html { height: 100%; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  font-size: 76%;
+  color: #888;
+  height: 100%;
+  background: #fff url(img/bg.jpg) repeat-x;
+}
+a {
+  text-decoration: none;
+  color: #11A0CF;
+  font-size: 1em;
+  padding: 1px 2px;
+  &:hover { background-color: #f4f4f4; }
+}
+
+acronym { border-bottom: 1px dotted #cc0000; cursor: help; }
+
+#container {
+
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#header {
+
+  width: 750px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-gap: 15px;
+  div {
+    background: url(img/header_botm.jpg) no-repeat 0px 70px;
+    text-align: left;
+  }
+  .logo {
+    color: blueviolet;
+    margin: 0;
+    clear: both;
+    line-height: 60px;
+    font-size: 4em;
+    padding: 0;
+
+    a {
+      padding: 0;
+      color: #000;
+      font-family: Century Gothic, sans-serif;
+      font-weight: normal;
+      color: #000;
+      &:hover { background-color: transparent; }
+    }
+  }
+  ul {
+    margin: 0 40px;
+    padding: 0;
+    li {
+      display: inline;
+      list-style-type: none;
+      margin: 0 5px;
+      font-size: 1.2em;
+      background: url(img/nav.gif) no-repeat;
+      width: 114px;
+      height: 25px;
+      float: left;
+      text-align: center;
+      a {
+        display: block;
+        width: 100%;
+        color: #fff;
+        padding-top: 7px;
+        .on, :hover { background-color: #333; color: #9c0; height: 20px; }
+      }
+    }
+  }
+  menu {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 4px 0px #6b9bb3;
+    position: absolute;
+    left: -280px;
+    background: white;
+    top: 60px;
+    bottom: 0;
+    width: 280px;
+
+    .menu-container {
+      padding: 15px;
+    }
+
+    .menu-container {
+      .header-item {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .sub-items {
+        display: flex;
+        flex-wrap: wrap;
+        a.subcategory-link {
+          color: #888888;
+          &:hover{
+            color: #333333;
+          }
+        }
+      }
+    }
+
+  }
+}
+ 
+.place-header {
+  position: relative;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/b/b9/Place_Jacobins_Lyon.jpg);
+  height: 200px;
+  background-size: 100%;
+  background-position: center;
+  &:before {
+    content: "";
+    display: block;
+    background: rgb(0 0 0 / 60%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  h1 {
+    position: absolute;
+    color: #a4a4a4;
+    bottom: 0;
+  }
+}
+
+#content {
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: normal;
+    font-size: 1.8em;
+    margin: 0 0 20px 0;
+    clear: both;
+    em {
+      color: #09C;
+      font-style: normal;
+    }
+  }
+  p {
+    text-indent: 3em;
+    line-height: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  ul {
+    margin: 20px 0;
+    padding: 0 0 0 10px;
+    .thumbs {
+      margin: 20px 0;
+      padding: 0;
+      li {
+        float: left;
+        margin: 3px;
+        padding: 0;
+        background-image: none;
+        a {
+          img { border: 5px solid #ddd; }
+          &:hover {
+            img { border: 5px solid #333; }
+          }
+        }
+      }
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden
+      }
+    }
+  }
+  li {
+    list-style-type: none;
+    background: url(img/bullet.gif) no-repeat 0px 8px;
+    padding: 0 0 0 15px;
+    line-height: 0.5em;
+    letter-spacing: 0.1em;
+  }
+  blockquote {
+    background-color: #FFFFF0;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    p { margin: 0; text-indent: 0; }
+  }
+}
+.sub-categories {
+  .place-item {
+
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    h3 {
+      font-size: 20px;
+    }
+    .image {
+      background: #0099cc;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px
+    }
+    .place-categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+
+}
+
+#left {
+  float: left;
+  width: 225px;
+  text-align: left;
+  margin-right: 35px;
+}
+
+#right {
+  float: right;
+  width: 438px;
+  text-align: left;
+}
+
+#footer {
+  position: absolute !important;
+  width: 100% !important;
+  z-index: 500 !important;
+  position: relative;
+  padding: 10px 0;
+  margin-top: -36px;
+  background-color: #333;
+  color: #999;
+  font-size: 11px;
+  border-top: 3px solid #ccc;
+  p { margin: 0 10px; text-align: center; }
+  a{
+    &:hover { background-color: #222; }
+  }
+}
+#map {
+  height: 400px;
+}

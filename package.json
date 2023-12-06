@@ -1,0 +1,31 @@
+{
+  "name": "places",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-load-plugins": "^2.0.8",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylus": "^3.0.1",
+    "jquery": "^3.7.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
